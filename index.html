@@ -1,26 +1,69 @@
 <body>
     <header>
-        <h1>SUNABACO-PROJECT※仮です</h1>
+        <h1>喫茶店向け在庫管理ミニアプリ(仮)</h1>
     </header>
 
     <main>
-        <section id="about">
-            <h2>このサイトについて</h2>
-            <p>説明文：ここなににしますかね</p>
+
+        <!-- 🔍 検索エリア -->
+        <section id="search-area">
+            <h2>商品検索</h2>
+            <input type="text" id="searchInput" placeholder="商品名で検索">
+            <button id="searchBtn">検索</button>
         </section>
 
-        <section id="members">
-            <h2>メンバー紹介</h2>
-            <ul>
-                <li>リーダー：沙也果さん</li>
-                <li>メンバー：黄意誠さん</li>
-                <li>下っ端：三谷</li>
-            </ul>
+        <!-- ➕ 商品追加フォーム -->
+        <section id="add-item">
+            <h2>商品追加</h2>
+            <form id="addItemForm">
+                <label>
+                    商品名：
+                    <input type="text" id="itemName" required>
+                </label>
+                <label>
+                    在庫数：
+                    <input type="number" id="itemStock" required>
+                </label>
+                <button type="submit">追加</button>
+            </form>
         </section>
+
+        <!-- 📦 在庫一覧テーブル -->
+        <section id="inventory">
+            <h2>在庫一覧</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>商品名</th>
+                        <th>在庫数</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryBody">
+                    <!-- ↓仮のデータです、またあとで商品とか決めましょ -->
+                     <tr>
+                        <td>コーヒー豆</td>
+                        <td>40</td>
+                        <td><button>出庫</button></td>
+                    </tr>
+                    <tr>
+                        <td>バニラアイス</td>
+                        <td>5</td>
+                        <td><button>発注</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 🚨 メッセージ表示エリア -->
+        <section id="message-area">
+            <p id="messageText">ここにメッセージが表示されます</p>
+        </section>
+
     </main>
 
     <footer>
-        <p>© 2026 Team Project</p>
+        <p>© 2026 SUNABACO Team</p>
     </footer>
 </body>
 
