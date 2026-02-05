@@ -1,7 +1,20 @@
 <body>
+<<<<<<< HEAD
+    <header class="site-header">
+        <h1 class="site-title">SUNABACO-PROJECT※仮です</h1>
+      
+        <nav class="site-nav">
+          <a href="#about">このサイトについて</a>
+          <a href="#members">メンバー紹介</a>
+        </nav>
+      </header>
+      
+      
+=======
     <header>
         <h1>喫茶店向け在庫管理ミニアプリ(仮)</h1>
     </header>
+
 
     <main>
 
@@ -40,18 +53,23 @@
                     </tr>
                 </thead>
                 <tbody id="inventoryBody">
-                    <!-- ↓仮のデータです、またあとで商品とか決めましょ -->
-                     <tr>
-                        <td>コーヒー豆</td>
-                        <td>40</td>
-                        <td><button>出庫</button></td>
+                    <tr>
+                      <td class="name">コーヒー豆</td>
+                      <td class="stock">40</td>
+                      <td>
+                        <button class="action-btn" data-action="out">出庫</button>
+                        <button class="action-btn" data-action="order">発注</button>
+                      </td>
                     </tr>
                     <tr>
-                        <td>バニラアイス</td>
-                        <td>5</td>
-                        <td><button>発注</button></td>
+                      <td class="name">バニラアイス</td>
+                      <td class="stock">5</td>
+                      <td>
+                        <button class="action-btn" data-action="out">出庫</button>
+                        <button class="action-btn" data-action="order">発注</button>
+                      </td>
                     </tr>
-                </tbody>
+                  </tbody>                  
             </table>
         </section>
 
